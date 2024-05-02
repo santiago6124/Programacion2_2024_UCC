@@ -1,5 +1,5 @@
 #include <iostream>
-#include "triangulo.h"
+#include "punto.h"
 
 Triangulo::Triangulo() {
     lado1 = lado2 = lado3 = 0;

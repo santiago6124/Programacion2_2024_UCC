@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <help_text/>
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>18</x>
+      <y>261</y>
+      <w>603</w>
+      <h>423</h>
+    </coordinates>
+    <panel_attributes>SimpleClass
+--
+-nombre:string
+-edad:int
+-DNI:int
+-sexo:char
+-peso:double
+-altura:double
+--
++Persona()
++Persona(string nombre, int edad, char sexo = 'H', double peso = 0.0, double altura = 0.0)
++Persona(string nombre, int edad, int dni, char sexo, double peso, double altura)
+--
++calcularIMC()
++esMayorDeEdad()
++comprobarSexo()
++generarDNI()
+--
++setNombre
++setEdad()
++setDNI()
++setSexo()
++setPeso()
++setAltura()
++GetNombre
++GetEdad()
++GetDNI()
++GetSexo()
++GetPeso()
++GetAltura()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
