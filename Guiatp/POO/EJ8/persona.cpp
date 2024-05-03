@@ -40,17 +40,17 @@ int Persona::calcularEdad()   {
     // Obtener la fecha actual
     std::time_t t = std::time(nullptr);
     std::tm* now = std::localtime(&t);
-    int currentYear = now->tm_year + 1900;
-    int currentMonth = now->tm_mon + 1;
-    int currentDay = now->tm_mday;
+    int añoActual = now->tm_year + 1900;
+    int mesActual = now->tm_mon + 1;
+    int diaActual = now->tm_mday;
 
     // Obtener el año de nacimiento
-    int birthYear, birthMonth, birthDay;
-    sscanf(fechaNacimiento.c_str(), "%d/%d/%d", &birthDay, &birthMonth, &birthYear);
+    int añoDeNac, mesDeNac, diaDeNac;
+    sscanf(fechaNacimiento.c_str(), "%d/%d/%d", &diaDeNac, &mesDeNac, &añoDeNac);
 
     // Calcular la edad
-    int age = currentYear - birthYear;
-    if (currentMonth < birthMonth || (currentMonth == birthMonth && currentDay < birthDay)) {
+    int age = añoActual - añoDeNac;
+    if (mesActual < mesDeNac || (mesActual == mesDeNac && diaActual < diaDeNac)) {
         age--;
     }
     return age;
