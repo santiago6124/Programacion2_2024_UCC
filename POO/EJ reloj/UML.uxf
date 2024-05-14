@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>200</y>
+      <w>270</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>Reloj
+--
++time_t:hora
++Temperatura temperatura
+--
+-setAlarma
+-setHora ()	
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>310</x>
+      <y>200</y>
+      <w>280</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>Temperatura
+--
++double temperatura
+--
+-calcularTemperatura	
+-mostrarTemperatura()
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
